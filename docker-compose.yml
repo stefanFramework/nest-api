@@ -1,0 +1,12 @@
+version: "3.4"
+services:
+  api:
+    build:
+      context: .
+    container_name: nest_api
+    volumes:
+      - ./app:/usr/src/app
+      - /usr/src/node_modules
+    ports:
+      - 3055:3000
+
